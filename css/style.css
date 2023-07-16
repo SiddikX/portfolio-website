@@ -136,11 +136,11 @@ header .navbar ul li a:hover {
 header .follow a {
     font-size: 2rem;
     color: #eee;
-    margin: 0 .7rem;
+    margin: 0 .6rem;
 }
 
 header .follow a:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     color: var(--teal);
 }
 
@@ -338,9 +338,11 @@ header .follow a:hover {
     color: #fff;
     font-size: 20px;
     text-align: center;
-    padding: 1.5rem;
-    border: .2rem solid #eee;
+    padding: 1rem;
+    border: .2rem solid var(--teal);
 }
+
+
 
 .portfolio .box-container .box:hover>.text-overlay {
     opacity: 1;
