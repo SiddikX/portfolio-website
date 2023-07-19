@@ -76,6 +76,14 @@ section {
     color: var(--teal);
 }
 
+.hdng {
+    text-align: center;
+
+    font-size: 2rem;
+
+    color: #fff;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -188,7 +196,14 @@ header .follow a:hover {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+}
 
+.about .newrow {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 48rem;
+    padding: 1rem 1rem;
+    padding-left: 6rem;
 
 }
 
@@ -210,33 +225,6 @@ header .follow a:hover {
     padding: 0 .5rem;
 }
 
-
-.about .row .counter {
-    flex: 1 1 48rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.about .row .counter .box {
-    width: 20rem;
-    background: #222;
-    text-align: center;
-    padding: 2rem;
-    margin: 2rem;
-}
-
-.about .row .counter .box span {
-    font-size: 3rem;
-    color: var(--teal);
-}
-
-.about .row .counter .box h3 {
-    font-size: 1.7rem;
-    color: #eee;
-}
-
 .about .row .box-container {
     display: flex;
     align-items: center;
@@ -247,7 +235,7 @@ header .follow a:hover {
 }
 
 .about .row .box-container .box {
-    width: 27rem;
+    width: 35rem;
     margin: 4rem 1rem;
     padding-left: 4rem;
     border-left: .2rem solid #fff;
@@ -255,10 +243,10 @@ header .follow a:hover {
 }
 
 .about .row .box-container .box .year span {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     background: #222;
     color: #fff;
-    border-radius: 5rem;
+    border-radius: 2rem;
     padding: .5rem 2.5rem;
 }
 
@@ -267,15 +255,16 @@ header .follow a:hover {
 }
 
 .about .row .box-container .box h3 {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     color: #fff;
     padding-top: 1.5rem;
+    padding-bottom: 1rem;
 }
 
 .about .row .box-container .box p {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: #eee;
-    padding: 1rem 0;
+    padding-bottom: 1rem;
 }
 
 .about .row .box-container .box i {
@@ -461,6 +450,27 @@ header .follow a:hover {
     html {
         font-size: 50%;
     }
+
+    .about .row {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .about .row .info,
+    .about .row .box-container {
+        width: 100%;
+        padding-left: 3rem;
+    }
+
+    .about .row .info h3 {
+        text-align: left;
+    }
+
+
+    .about .newrow {
+        padding-left: 3rem;
+    }
 }
 
 @media (max-width: 495px) {
@@ -472,14 +482,27 @@ header .follow a:hover {
         margin: 0 3rem;
     }
 
-    .about .row .counter .box {
-        width: 100%;
-
+    .about .row {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
 
-    .about .row .box-container .box {
+    .about .row .info,
+    .about .row .box-container {
         width: 100%;
+        padding-left: 3rem;
     }
+
+    .about .row .info h3 {
+        text-align: left;
+    }
+
+
+    .about .newrow {
+        padding-left: 3rem;
+    }
+
 
     .portfolio .box-container .box {
         width: 100%;
